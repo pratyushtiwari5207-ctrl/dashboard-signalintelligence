@@ -25,7 +25,7 @@ export function KpiRow() {
       <KpiLiterature
         value={data.literature.value}
         trend={data.literature.trend}
-        spark={data.literature.spark}
+        spark={[...data.literature.spark]}
       />
       <KpiIntake value={data.intake.value} slaAtRisk={data.intake.slaAtRisk} ack={data.intake.acknowledged} />
       <KpiSignals value={data.signals.value} critical={data.signals.critical} warning={data.signals.warning} stable={data.signals.stable} />
